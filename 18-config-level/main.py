@@ -8,7 +8,7 @@ from my_config.groq_config import GROQ_MODEL,groq_client
 
 
 # Golbal config
-set_default_openai_api("chat_completions")
+## set_default_openai_api("chat_completions") # This function is not defined/imported
 set_default_openai_client(gemini_client)
 
 # Set it to use gemini api key and model
