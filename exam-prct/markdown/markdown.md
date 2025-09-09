@@ -35,7 +35,8 @@ Click = goes to https://www.google.com
 
 # Paragraph & line break
 Separate paragraphs with a blank line.
-Hard line break: end a line with two spaces, or use <br>
+Hard line break: end a line with two spaces, or use html 'br'tag<br>
+
  # Block-level delements
  Headings
  # h1
@@ -94,13 +95,3 @@ Einstein’s famous equation: $E = mc^2$
 
 # Strikethrough
 This is ~~deleted text~~.
-
-
-
-
-
-
-
-
-
-
