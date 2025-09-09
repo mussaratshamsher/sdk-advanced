@@ -1,20 +1,23 @@
-
 import os
 from dotenv import load_dotenv
 from agents import AsyncOpenAI, OpenAIChatCompletionsModel, set_tracing_disabled
 
-
-# Disable tracing and enable verbose stdout for debugging
 set_tracing_disabled(True)
-load_dotenv()
+
+# Correctly locate the .env file from the project root
+dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+load_dotenv(dotenv_path=dotenv_path)
 
 # Setup Gemini model
 API_KEY = os.getenv("GEMINI_API_KEY")
+BASE_URL = os.getenv("GEMINI_BASE_URL")
+
 external_client = AsyncOpenAI(
     api_key=API_KEY,
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+    base_url=BASE_URL
 )
+
 model = OpenAIChatCompletionsModel(
-    model="gemini-1.5-flash-latest",  # Corrected to a valid model name
+    model="gemini-1.5-flash",
     openai_client=external_client
 )

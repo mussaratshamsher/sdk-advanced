@@ -9,9 +9,10 @@ load_dotenv()
 
 # Setup Gemini model
 API_KEY = os.getenv("GEMINI_API_KEY")
+BASE_URL = os.getenv("GEMINI_BASE_URL")
 external_client = AsyncOpenAI(
     api_key=API_KEY,
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+    base_url=BASE_URL
 )
 model = OpenAIChatCompletionsModel(
     model="gemini-1.5-flash",
@@ -21,15 +22,19 @@ model = OpenAIChatCompletionsModel(
 #original agent
 assistant = Agent(
     name="Essay Writer", model=model,
-    instructions="You are helpul assisstant that answers users prompts.",
+    instructions="You are helpful assisstant that answers users prompts.",
 )
 
-async def main():
+user_input = "write 5 lines about the importance of time management"
+result = asyncio.run(Runner.run(assistant, user_input))
+print(result.final_output)
+# async def main():
 
-    user_input = input("write your question:")
-    result = await Runner.run(assistant, user_input)
-    print(result.final_output)
+#     user_input = input("write your question:")
+#     result = await Runner.run(assistant, user_input)
+#     print(result.final_output)
     
     
-if __name__ == "__main__":
-    asyncio.run(main())
+# if __name__ == "__main__":
+#     asyncio.run(main())
+
