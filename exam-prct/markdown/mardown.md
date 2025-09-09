@@ -1,3 +1,4 @@
+
 # What is Markdown?
 Markdown is a lightweight plain-text markup language designed to be easy to read and write while converting cleanly to HTML. It’s used for README files, docs, blog posts, notes, and more. There’s no single universal “Markdown” — there’s a formal spec called CommonMark
 
@@ -17,9 +18,9 @@ Markdown is a lightweight plain-text markup language designed to be easy to read
 ![Alt text](image.png "Tooltip text") → the image itself with alt text + tooltip.
 
 Wrapping that in [ ... ](URL) → makes the whole image clickable as a link.
+
 # Example
 1. [![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Go to Google")](https://www.google.com)
-
 👉 What happens:
 The Google logo appears.
 Hover = tooltip: “Go to Google”.
@@ -31,7 +32,6 @@ Click = goes to https://www.google.com
 
 # Local image:
 [![My Profile](ms.png "Click to see my portfolio")](https://portfolio-mussarat-shamsher.vercel.app/)
-
 
 # Paragraph & line break
 Separate paragraphs with a blank line.
@@ -48,8 +48,6 @@ Hard line break: end a line with two spaces, or use <br>
 # Lists
  => unordered:
  - item 1
- - item 2
- + item 3
  + item 4
  => ordered
  1. first item
@@ -70,7 +68,9 @@ def greet(name):
     return f"Hello, {name}" 
 ```
 ```typescript
-
+function sum(a: number, b: number): number {
+    return a + b;
+    }   
 ```
 # Tables
 Simple pipe tables (common in GFM and many renderers):
