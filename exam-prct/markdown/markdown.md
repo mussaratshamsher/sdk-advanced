@@ -11,7 +11,7 @@ Markdown is a lightweight plain-text markup language designed to be easy to read
  [Link text](https://example.com "optional title")
 ## Example
 [Google][1]
-[1]: https://google.com "Search"
+[1]: (https://google.com "Search")
 
 2. # Image as link 
 [![Alt text](image.png "Tooltip text")](https://example.com)
@@ -20,14 +20,14 @@ Markdown is a lightweight plain-text markup language designed to be easy to read
 Wrapping that in [ ... ](URL) → makes the whole image clickable as a link.
 
 # Example
-1. [![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Go to Google")](https://www.google.com)
-👉 What happens:
-The Google logo appears.
-Hover = tooltip: “Go to Google”.
+1. [![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)](https://www.google.com "Go to Google") <br>
+👉 What happens: <br>
+The Google logo appears. <br>
+Hover = tooltip: “Go to Google”. <br>
 Click = goes to https://www.google.com
 
-# Social media icons (common in READMEs)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white "Follow me on Twitter")](https://x.com/MussaratShams)
+# Social media links (common in READMEs)
+[![X](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white "Follow me on Twitter")](https://x.com/MussaratShams) <br>
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white "Connect on LinkedIn")](https://www.linkedin.com/in/mussarat-shamsher-7618a6380/)
 
 # Local image:
@@ -81,7 +81,6 @@ Simple pipe tables (common in GFM and many renderers):
 | Bob    | Designer|   88  |
 # Footnotes, definition lists, math, and other extensions
 Footnotes: Here is a sentence with a footnote.[^1]
-
 [^1]: This is the footnote text.
  
 Definition lists: 
@@ -94,4 +93,5 @@ Banana
 Einstein’s famous equation: $E = mc^2$
 
 # Strikethrough
+use two tildes (~ ) before & after the text.
 This is ~~deleted text~~.
