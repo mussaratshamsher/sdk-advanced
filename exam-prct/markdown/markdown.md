@@ -31,7 +31,11 @@ Click = goes to https://www.google.com
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white "Connect on LinkedIn")](https://www.linkedin.com/in/mussarat-shamsher-7618a6380/)
 
 # Local image:
-[![My Profile](ms.png "Click to see my portfolio")](https://portfolio-mussarat-shamsher.vercel.app/)
+[![My Profile](ms.png "Click to see my portfolio")](https://portfolio-mussarat-shamsher.vercel.app/) <br> <br>
+   Steps <br>
+1. [![My Profile] 
+2. (ms.png "Click to see my portfolio")]
+3. (https://portfolio-mussarat-shamsher.vercel.app/)
 
 # Paragraph & line break
 Separate paragraphs with a blank line.
