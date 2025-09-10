@@ -14,13 +14,15 @@ Markdown is a lightweight plain-text markup language designed to be easy to read
 [1]: (https://google.com "Search")
 
 2. # Image as link 
-[![Alt text](image.png "Tooltip text")](https://example.com)
-![Alt text](image.png "Tooltip text") → the image itself with alt text + tooltip.
-
-Wrapping that in [ ... ](URL) → makes the whole image clickable as a link.
+[![Alt text](image.png "Tooltip text")](https://example.com) <br>
+Steps: 
+1. [![Google Logo]
+2. (https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)]
+3. (https://www.google.com "Go to Google") <br>
+4. Remove numbers and join them
 
 # Example
-1. [![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)](https://www.google.com "Go to Google") <br>
+[![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)](https://www.google.com "Go to Google") <br>
 👉 What happens: <br>
 The Google logo appears. <br>
 Hover = tooltip: “Go to Google”. <br>
@@ -29,10 +31,14 @@ Click = goes to https://www.google.com
 # Social media links (common in READMEs)
 [![X](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white "Follow me on Twitter")](https://x.com/MussaratShams) <br>
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white "Connect on LinkedIn")](https://www.linkedin.com/in/mussarat-shamsher-7618a6380/)
-
+<br>
+Steps: 
+1. [![X]
+2. (https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white "Follow me on Twitter")]
+3. (https://x.com/MussaratShams)
 # Local image:
 [![My Profile](ms.png "Click to see my portfolio")](https://portfolio-mussarat-shamsher.vercel.app/) <br> <br>
-   Steps <br>
+Steps: 
 1. [![My Profile] 
 2. (ms.png "Click to see my portfolio")]
 3. (https://portfolio-mussarat-shamsher.vercel.app/)
