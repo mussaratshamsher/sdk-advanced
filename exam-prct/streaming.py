@@ -6,7 +6,7 @@ from agents.run import RunConfig
 
 load_dotenv()
 
-MODEL_NAME = "gemini-2.0-flash"
+MODEL_NAME = "gemini-2.0-flash-latest"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 external_client = AsyncOpenAI(
@@ -32,19 +32,18 @@ assistant = Agent(
 
 async def main():
     user_input = input("Prompt: ")
-
     result = Runner.run_streamed(
         assistant,
         [{"role": "user", "content": user_input}],
         run_config=config
     )
-
     print("Assistant: ", end="", flush=True)
 
     async for event in result.stream_events():
         if event.type == "raw_response_event" and hasattr(event.data, "delta"):
             token = event.data.delta
             print(token, end="", flush=True)
+
 
 if __name__ == "__main__":
     asyncio.run(main())

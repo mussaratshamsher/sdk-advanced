@@ -7,7 +7,7 @@ from agents.run import RunConfig
 
 load_dotenv()
 
-MODEL_NAME = "gemini-2.0-flash"
+MODEL_NAME = "gemini-2.0-flash-latest"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # External Gemini client

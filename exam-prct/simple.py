@@ -18,13 +18,11 @@ model = OpenAIChatCompletionsModel(
     model="gemini-1.5-flash",
     openai_client=external_client
 )
-
-#original agent
+#agent
 assistant = Agent(
     name="Essay Writer", model=model,
     instructions="You are helpful assisstant that answers users prompts.",
 )
-
 user_input = "write 5 lines about the importance of time management"
 result = asyncio.run(Runner.run(assistant, user_input))
 print(result.final_output)
@@ -33,8 +31,7 @@ print(result.final_output)
 #     user_input = input("write your question:")
 #     result = await Runner.run(assistant, user_input)
 #     print(result.final_output)
-    
-    
+       
 # if __name__ == "__main__":
 #     asyncio.run(main())
 
